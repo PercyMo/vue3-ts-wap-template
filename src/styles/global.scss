@@ -1,0 +1,13 @@
+/* 隐藏滚动条 */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+/* 哀悼 灰阶 */
+.sad-mod {
+  filter: grayscale(100%);
+  filter: gray;
+  filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+}

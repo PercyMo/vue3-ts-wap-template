@@ -1,0 +1,10 @@
+
+node_modules
+*.woff
+*.ttf
+.vscode
+.idea
+dist
+/public
+/docs
+.husky

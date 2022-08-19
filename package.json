@@ -1,0 +1,71 @@
+{
+  "name": "vue3-ts-wap-template",
+  "version": "0.1.0",
+  "author": {
+    "name": "PercyMo",
+    "email": "1418968663@qq.com",
+    "url": "https://github.com/PercyMo"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build:test": "vue-cli-service build --mode test",
+    "build:preprod": "vue-cli-service build --mode preprod",
+    "lint": "vue-cli-service lint",
+    "analyz": "cross-env npm_config_report=true vue-cli-service build"
+  },
+  "dependencies": {
+    "@vant/use": "^1.4.1",
+    "amfe-flexible": "^2.2.1",
+    "axios": "^0.27.2",
+    "core-js": "^3.8.3",
+    "dayjs": "^1.11.4",
+    "js-cookie": "^3.0.1",
+    "lodash-es": "^4.17.21",
+    "pinia": "^2.0.18",
+    "vant": "^3.5.4",
+    "vue": "^3.2.13",
+    "vue-router": "^4.0.3"
+  },
+  "devDependencies": {
+    "@types/js-cookie": "^3.0.2",
+    "@types/lodash-es": "^4.17.6",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-typescript": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "@vue/eslint-config-typescript": "^9.1.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "lint-staged": "^11.1.2",
+    "postcss-pxtorem": "^6.0.0",
+    "prettier": "^2.4.1",
+    "sass": "^1.32.7",
+    "sass-loader": "^12.0.0",
+    "typescript": "~4.5.5",
+    "unplugin-vue-components": "^0.22.4",
+    "unplugin-vue-define-options": "0.6.1",
+    "webpack-bundle-analyzer": "^4.5.0"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "keywords": [
+    "vue",
+    "vant",
+    "vue3",
+    "ts",
+    "typescript",
+    "wap"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": "^14.17.0 || >=16.0.0"
+  }
+}

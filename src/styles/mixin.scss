@@ -1,0 +1,6 @@
+// 单行文本隐藏
+@mixin text-single-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
