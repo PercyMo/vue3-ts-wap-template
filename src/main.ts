@@ -2,7 +2,7 @@ import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
 import { setupStore } from '@/store';
-import { setupVant, setupAssets } from '@/plugins';
+import { setupVant, setupAssets, setupVConsole } from '@/plugins';
 // rem 布局适配
 import 'amfe-flexible/index.js';
 
@@ -13,6 +13,8 @@ function setupPlugins() {
   setupVant(app);
   // 引入静态资源
   setupAssets();
+  // 开发环境加载 vConsole
+  setupVConsole();
 }
 
 function setupApp() {

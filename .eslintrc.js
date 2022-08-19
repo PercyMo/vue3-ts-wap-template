@@ -27,6 +27,7 @@ module.exports = {
     // typescript
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/ban-types': 'off',
+    '@typescript-eslint/ban-ts-comment': 'off',
 
     // vue
     'vue/multi-word-component-names': 'off',

@@ -51,6 +51,7 @@
     "typescript": "~4.5.5",
     "unplugin-vue-components": "^0.22.4",
     "unplugin-vue-define-options": "0.6.1",
+    "vconsole": "^3.14.6",
     "webpack-bundle-analyzer": "^4.5.0"
   },
   "gitHooks": {
