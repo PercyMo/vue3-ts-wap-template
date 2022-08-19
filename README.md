@@ -3,6 +3,7 @@
 ## 技术栈
 * [Vue 3](https://cn.vuejs.org/)
 * [Vant 3](https://vant-contrib.gitee.io/vant/#/zh-CN/home)
+* [TypeScript](https://www.typescriptlang.org/)
 
 ## 目录结构
 ```
@@ -43,9 +44,21 @@ $ yarn build
 $ yarn analyz
 ```
 
+## 功能
+```
+- px自动转换rem (默认375宽，在 postcss.config.js 调整)
+- components
+  - BackTop 返回顶部
+- 开发环境下 vconsole
+- hooks
+  - 页面触底事件
+- 页面
+  - 404错误页
+  - /_about 查看构建时间及版本号
+- analyz 构建分析
+```
+
 ## TODO
-- [ ] 动态修改 title
-- [ ] vconsole
 - [ ] hooks
 - [ ] stylelint
 - [ ] lintOnSave: false, // 关闭eslint检查，使用 git hooks
