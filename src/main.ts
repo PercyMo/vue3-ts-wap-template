@@ -1,6 +1,6 @@
 import { createApp } from 'vue';
 import App from './App.vue';
-import router from './router';
+import { setupRouter } from './router';
 import { setupStore } from '@/store';
 import { setupVant, setupAssets, setupVConsole } from '@/plugins';
 // rem 布局适配
@@ -20,7 +20,9 @@ function setupPlugins() {
 function setupApp() {
   // 挂载 store 状态管理
   setupStore(app);
-  app.use(router).mount('#app');
+  // 挂载路由
+  setupRouter(app);
+  app.mount('#app');
 }
 
 setupPlugins();

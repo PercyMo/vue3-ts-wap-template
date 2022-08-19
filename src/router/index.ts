@@ -1,13 +1,14 @@
+import type { App } from 'vue';
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
+import { createRouterGuard } from './router-guard';
 import ErrorRouter from './modules/error';
 import ExampleRouter from './modules/example';
-import HomeView from '../views/index.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'home',
-    component: HomeView,
+    component: () => import('@/views/index.vue'),
   },
   {
     path: '/_about',
@@ -24,5 +25,11 @@ const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
 });
+
+export const setupRouter = (app: App<Element>) => {
+  // 路由守卫
+  createRouterGuard(router);
+  app.use(router);
+};
 
 export default router;

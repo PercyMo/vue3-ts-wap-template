@@ -9,6 +9,9 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: '404',
         name: 'PageNotFound',
+        meta: {
+          title: 'The page is not found',
+        },
         component: () =>
           import(/* webpackChunkName: 'error' */ '@/views/error/404.vue'),
       },
