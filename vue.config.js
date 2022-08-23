@@ -12,6 +12,7 @@ const __APP_INFO__ = {
 
 module.exports = defineConfig({
   transpileDependencies: true,
+  lintOnSave: false,
   devServer: {
     // open: true,
     // 代理服务，解决前端跨域问题时会非常有用

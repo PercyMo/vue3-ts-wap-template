@@ -1,3 +1,7 @@
 module.exports = {
-  '*.{js,jsx,vue,ts,tsx}': 'vue-cli-service lint',
+  '*.{js,jsx,ts,tsx}': ['eslint --fix', 'prettier --write'],
+  '*.json': ['prettier --write'],
+  '*.vue': ['eslint --fix', 'prettier --write', 'stylelint --fix'],
+  '*.{scss,less,styl,html}': ['stylelint --fix', 'prettier --write'],
+  '*.md': ['prettier --write'],
 };
