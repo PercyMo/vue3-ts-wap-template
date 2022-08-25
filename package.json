@@ -11,6 +11,7 @@
     "build": "vue-cli-service build",
     "build:test": "vue-cli-service build --mode test",
     "build:preprod": "vue-cli-service build --mode preprod",
+    "build:preview": "yarn build && npx serve -s dist",
     "lint": "vue-cli-service lint",
     "lint:lint-staged": "lint-staged",
     "analyz": "cross-env npm_config_report=true vue-cli-service build"
