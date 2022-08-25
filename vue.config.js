@@ -13,6 +13,8 @@ const __APP_INFO__ = {
 module.exports = defineConfig({
   transpileDependencies: true,
   lintOnSave: false,
+  // TODO: 临时关闭并行构建，unplugin-vue-define-options 编译结果异常，暂时无法解决
+  parallel: false,
   devServer: {
     // open: true,
     // 代理服务，解决前端跨域问题时会非常有用
