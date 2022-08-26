@@ -8,3 +8,4 @@ dist
 /public
 /docs
 .husky
+!stylelint.config.js

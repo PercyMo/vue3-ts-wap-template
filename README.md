@@ -59,12 +59,12 @@ $ yarn analyz
   - 404错误页
   - /_about 查看构建时间及版本号
 - analyz 构建分析
+- eslint/stylelint/prettier 配合 gitHooks 提交前进行代码检验并自动修复大部分格式问题
 ```
 
 ## TODO
 
 - [ ] hooks
-- [ ] stylelint-order 还不生效
 - [ ] directives
 - [ ] axios 封装优化。取消重复请求；请求失败重试；接口缓存；
 - [ ] 自定义 icon
