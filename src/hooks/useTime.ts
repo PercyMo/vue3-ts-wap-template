@@ -1,9 +1,9 @@
 import { ref, onMounted, onUnmounted } from 'vue';
 import dayjs from 'dayjs';
 
-// /**
-//  * 动态获取本地时间
-//  */
+/**
+ * 动态获取本地时间
+ */
 export const useTime = () => {
   const year = ref<number>(1992); // 年
   const month = ref<number>(12); // 月
