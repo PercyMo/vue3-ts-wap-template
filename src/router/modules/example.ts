@@ -13,7 +13,9 @@ const routes: Array<RouteRecordRaw> = [
           title: 'Here is an example page',
         },
         component: () =>
-          import(/* webpackChunkName: 'example' */ '@/views/example/home.vue'),
+          import(
+            /* webpackChunkName: 'example' */ '@/views/example/home/index.vue'
+          ),
       },
     ],
   },
